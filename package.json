@@ -1,0 +1,31 @@
+{
+  "name": "blue-fullstack-c010-main",
+  "version": "1.0.0",
+  "description": "Repositório do curso de Full stack Módulo 3 para a turma C010",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "prompt-sync": "^4.2.0"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RuyGuilherme/projeto-filmes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RuyGuilherme/projeto-filmes/issues"
+  },
+  "homepage": "https://github.com/RuyGuilherme/projeto-filmes#readme"
+}
