@@ -1,4 +1,5 @@
 const apiUrl = 'http://localhost:3000'
+
 let modoEdicao = false;
 let idEdicao = 0;
 
@@ -16,7 +17,7 @@ const getFilmes = async () => {
     const response = await fetch(`${apiUrl}/filmes/get-filmes`);
     const filmes = await response.json();
     filmes.map((filme) => {
-      //  console.log(filme);
+    
         lista.insertAdjacentHTML('beforeend', `
 <div class="col"> 
 <div class"col">
