@@ -7,32 +7,26 @@ const lista = document.getElementById('lista');
 
 const getFilmes = async () => {
     
-    const chamadaApi = fetch(`${apiUrl}/filmes/get-filmes`)
-    chamadaApi.then((response) => {
-      
-    })
-    .then((filmes) => {
-        
-    })
-    const response = await fetch(`${apiUrl}/filmes/get-filmes`);
+     const response = await fetch(`${apiUrl}/filmes/get-filmes`);
     const filmes = await response.json();
-    filmes.map((filme) => {
+
+    filmes.map((filmes) => {
     
         lista.insertAdjacentHTML(
             "beforeend",
             `
                   <tr>
-                      <th scope="row">${catalogoFilmes
-                        .id} ${ catalogoFilmes.visualizado ? 'visualizada': 'nao visualizada' }</th>
-                      <td>${catalogoFilmes.Filme}</td>
-                      <td>${catalogoFilmes.ano}</td>
-                      <td>${catalogoFilmes.descrição}</td>
-                      <td>${catalogoFilmes.imagem}</td>
+                      <th scope="row">${filmes
+                        .id} ${ filmes.visualizado ? 'visualizada': 'nao visualizada' }</th>
+                      <td>${filmes.Filme}</td>
+                      <td>${filmes.ano}</td>
+                      <td>${filmes.descrição}</td>
+                      <td>${filmes.imagem}</td>
                       <td>
-                          <button class="btn btn-primary" onclick="editaVaga(${catalogoFilmes.id})">Editar</button>
-                          <button class="btn btn-danger" onclick="deleteVaga(${catalogoFilmes.id})">Deletar</button>
-                          <input type="checkbox" onclick="marcarVisualizacao(${catalogoFilmes.id})" ${ catalogoFilmes.visualizado ? 'checked': '' }/> assistido
-                          ${ catalogoFilmes.visualizado ? '': `<button class="btn btn-info" onclick="marcarVisualizacao(${catalogoFilmes.id})">Visualizar</button>` }
+                          <button class="btn btn-primary" onclick="editaVaga(${filmes.id})">Editar</button>
+                          <button class="btn btn-danger" onclick="deleteVaga(${filmes.id})">Deletar</button>
+                          <input type="checkbox" onclick="marcarVisualizacao(${filmes.id})" ${ filmes.visualizado ? 'checked': '' }/> assistido
+                          ${ filmes.visualizado ? '': `<button class="btn btn-info" onclick="marcarVisualizacao(${filmes.id})">Visualizar</button>` }
                           
                       </td>
                   </tr>
