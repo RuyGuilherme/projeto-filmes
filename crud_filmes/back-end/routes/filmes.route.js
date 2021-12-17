@@ -4,15 +4,15 @@ const router = express.Router();
 
 const filmesController = require('../controllers/filmes.controller');
 
-router.get('/', filmesController.getfilmes)
+router.get('/', filmesController. getFilmesController)
 
-router.get('/:id', filmesController.getfilmesById)
+router.get('/:id', filmesController.getFilmesByIdController)
 
-router.post('/add', filmesController.postfilmes)
+router.post('/add', filmesController.createFilmeController)
 
-router.put('/edit/:id', filmesController.putFilmes)
+router.put('/edit/:id', filmesController.updateFilmeController)
 
-router.delete('/delete/:id', filmesController.deletefilmes)
+router.delete('/delete/:id', filmesController.deleteFilmeController)
 
 module.exports = router;
 

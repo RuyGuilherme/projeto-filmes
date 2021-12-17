@@ -12,45 +12,47 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="shortcut icon" href="minilogo.png" />
+    <link rel="shortcut icon" href="logoMovie.jpg" />
   </head>
-  <body>
-    <header>
-      
-    </header>
+
+  <body> 
     <main class="container">
       <div >
-        <img src="clogo.png" alt="logo" class=logo>
+        <img src="logoMarvel.jpg" alt="logo" class=logo>
 
+          <div class="col-12">
+            <table class="table">
+              <thead>
+                <tr>
 
-        <div class="col-12">
-          <table class="table">
-            <thead>
-              <tr>
-                <td scope="col">
-                  <div class="form-floating mb-3">
-                    <input
+                  <td scope="col">
+                   <div class="form-floating mb-3">
+                     <input
                       type="text"
                       class="form-control"
                       id="Filme"
                       placeholder="Digite o nome do filme"
                       required
                     />
+
                     <label for="Filme">Filme:</label>
+
                   </div>
-                </td>
+                 </td>
+
                 <td scope="col">
                   <div class="form-floating mb-3">
                     <input
                       type="text"
                       class="form-control"
                       id="Gênero"
-                      placeholder="Digite o ano de lançamento"
+                      placeholder="Digite o ano"
                       required
                     />
                     <label for="Gênero">Gênero:</label>
                   </div>
                 </td>
+
                 <td scope="col">
                   <div class="form-floating mb-3">
                     <input
@@ -62,19 +64,23 @@
                     <label for="Assistido">Assistido:</label>
                   </div>
                 </td>
+
                 <td scope="col">
-                  <td scope="col">
-                    <div class="form-floating mb-3">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="Nota"
-                        placeholder="Ex: 2h 30min"
-                        requered
-                      />
-                      <label for="Nota">Nota:</label>
-                    </div>
+
+                    <td scope="col">
+                       <div class="form-floating mb-3">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="Nota"
+                          placeholder="Ex: 2h 30min"
+                          requered
+                        />
+
+                       <label for="Nota">Nota:</label>  
+                      </div>
                   </td>
+
                   <td scope="col">
                     <div class="form-floating mb-3">
                       <input
@@ -84,32 +90,34 @@
                         placeholder="Coloque a imagem do filme"
                         requered
                       />
-                      <label for="imagem">imagem:</label>
-                    </div>
-                  </td>
-                  <td scope="col">
-                  <button
-                    class="mb-4 btn btn-success btn-lg"
-                    class= "btn-env"
-                    onclick="submitForm()"
-                  >
-                    Enviar
-                  </button>
-                </td>
-              </tr>
-            </thead>
 
-          </table>
+                      <label for="imagem">imagem:</label>
+
+                    </div>
+
+                  </td>
+
+                  <td scope="col">
+                  <button class="mb-4 btn btn-success btn-lg" class= "btn-env" 
+                  onclick="submitForm()"> Enviar </button>
+                  </td>
+
+                </tr>
+                 
+                </thead>
+           </table>
         
-      
     </main>
+
     <div id="lista" class="row row-cols-4"></div>
 
     <script src="scripts.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
   </body>
 </html>
