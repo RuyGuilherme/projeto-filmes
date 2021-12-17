@@ -7,7 +7,7 @@ const lista = document.getElementById('lista');
 
 const getFilmes = async () => {
     
-     const response = await fetch(`${apiUrl}/filmes/get-filmes`);
+    const response = await fetch(`${apiUrl}/filmes/get-filmes`);
     const filmes = await response.json();
 
     filmes.map((filmes) => {
@@ -118,12 +118,13 @@ const putFilmes = async (id) => {
   modoEdicao = true;
   idEdicao = id;
 
+
   const result = await getById(id);
  
-document.getElementById('Filme').value = result.Filme
-document.getElementById('ano').value = result.ano
-document.getElementById('descrição').value = result.descrição
-document.getElementById('imagem').value = result.imagem
+ document.getElementById('Filme').value = result.Filme
+ document.getElementById('ano').value = result.ano
+ document.getElementById('descrição').value = result.descrição
+ document.getElementById('imagem').value = result.imagem
 
 }
 
